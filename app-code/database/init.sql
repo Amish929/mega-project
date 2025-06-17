@@ -1,0 +1,5 @@
+CREATE DATABASE IF NOT EXISTS mydb;
+USE mydb;
+CREATE TABLE IF NOT EXISTS messages (msg VARCHAR(255));
+INSERT INTO messages VALUES ('Hello from MySQL Database!');
+

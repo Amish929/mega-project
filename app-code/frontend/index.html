@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Frontend</title></head>
+<body>
+  <h1>Hello from Frontend!</h1>
+  <p>Data from backend: <span id="data"></span></p>
+  <script>
+    fetch("13.59.174.89:5000/data")
+      .then(response => response.json())
+      .then(data => document.getElementById("data").innerText = data.message);
+  </script>
+</body>
+</html>
+
